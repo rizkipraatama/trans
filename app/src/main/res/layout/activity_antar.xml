@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context="com.example.rizki.transportptba.AntarActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/judul_antar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="left"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/antar" />
+        <TextView
+            android:id="@+id/text_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomor Pegawai"/>
+
+        <TextView
+            android:id="@+id/nomor_antar_tampil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="3mm"/>
+
+        <TextView
+            android:id="@+id/text_nomor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pegawai"/>
+
+        <TextView
+            android:id="@+id/nama_antar_tampil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="3mm"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Mail Pegawai" />
+
+        <TextView
+            android:id="@+id/email_antar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="3mm"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomor Telepon Pegawai" />
+
+        <EditText
+            android:id="@+id/telpon_antar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satuan Kerja Cost Center" />
+
+        <Spinner
+            android:id="@+id/satker_antar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/satker">
+        </Spinner>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Ke"/>
+
+        <Spinner
+            android:id="@+id/daerah_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/nama_kota">
+        </Spinner>
+        
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Tanggal dan Waktu" />
+
+        <Button
+            android:id="@+id/btn_tanggal_antar"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Pilih" />
+
+        <EditText
+            android:id="@+id/tanggal_antar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waktu" />
+        <Spinner
+            android:id="@+id/waktu_antar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/waktu"
+            />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Penumpang (Orang)" />
+
+
+        <EditText
+            android:id="@+id/jumlah_antar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/keperluan_antar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keperluan" />
+        <Spinner
+            android:id="@+id/kep_antar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:entries="@array/keperluan" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keterangan" />
+
+        <EditText
+            android:id="@+id/ket_antar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text=" " />
+
+        <Button
+            android:id="@+id/btn_lanjut"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dip"
+            android:background="@color/colorAccent"
+            android:text="Isi Biodata Penumpang"
+            android:textColor="@android:color/black" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/layout_bio_antar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:theme="@style/AppTheme.NoActionBar">
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</ScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+

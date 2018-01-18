@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nama_kota">
+        <item>Palembang - Bandara SMB II</item>
+        <item>Mess Puncak Sekuning</item>
+        <item> Kantor Pusat Tarahan</item>
+    </string-array>
+
+    <string-array name="satker">
+        <item>Akutansi dan Anggaran</item>
+        <item>Analisis, Evaluasi, dan Optimasi</item>
+        <item>Anggaran Briket</item>
+        <item>Angkutan Batubara</item>
+        <item>Bengkel Utama</item>
+        <item>Corporate Social Responsibillity(CPR)</item>
+        <item>Dermaga Kertapati</item>
+        <item>Dewan Komisaris</item>
+        <item>Direksi Perusahaan</item>
+        <item>Eksbang dan PJP</item>
+        <item>Eksplorasi Rinci</item>
+        <item>Hubungan Industrial</item>
+        <item>Hukum dan Perijinan</item>
+        <item>K3 dan Lingkungan</item>
+        <item>Kajian Operasi dan Teknik</item>
+        <item>Kantor Pewakilan Jakarta</item>
+        <item>Kendali Produk</item>
+        <item>Konsultan EMS/PT.NPP</item>
+        <item>Logistik</item>
+        <item>PATB</item>
+        <item>Pemasaran</item>
+        <item>Pengembangan Korporat</item>
+        <item>Perbendaharaan dan Pendanaan</item>
+        <item>Perencanaan Korporat</item>
+        <item>Program Kesehatan</item>
+        <item>Proyek Pembuatan Selective Breaker</item>
+        <item>Proyek SCMS Enhancement</item>
+        <item>PT.BAB</item>
+        <item>PT.BAM</item>
+        <item>PT.BEST</item>
+        <item>PT.BMI</item>
+        <item>PT.BPI</item>
+        <item>PT.BSP</item>
+        <item>PT.HBAP</item>
+        <item>Rumah Sakit Bukit Asam</item>
+        <item>Sarana dan Prasarana</item>
+        <item>Satuan Pengawasan Intern</item>
+        <item>Security</item>
+        <item>Sekretaris Perusahaan</item>
+        <item>Sistem Manajemen Perusahaan</item>
+        <item>Sumber Daya Manusia</item>
+        <item>Suplay Chain Manajemen</item>
+        <item>Tambang Luar</item>
+        <item>Teknologi Informasi</item>
+        <item>Tim Elektrifikasi</item>
+        <item>Unit Pertambangan Tanjung Enim</item>
+    </string-array>
+    <string-array name="keperluan">
+    <item>SPJ</item>
+    <item>SPB</item>
+    <item>Antar Sample</item>
+    <item>Pengukuran Stock DERTI</item>
+    <item>Pengukuran Stock Tarahan</item>
+    <item>Kalibrasi Alat</item>
+    </string-array>
+    <string-array name="waktu">
+        <item>05.00</item>
+        <item>08.00</item>
+        <item>10.00</item>
+        <item>13.00</item>
+        <item>15.00</item>
+        <item>17.00</item>
+    </string-array>
+
+</resources>

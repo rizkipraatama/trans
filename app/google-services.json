@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "679911741787",
+    "firebase_url": "https://etransport-a61e6.firebaseio.com",
+    "project_id": "etransport-a61e6",
+    "storage_bucket": "etransport-a61e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679911741787:android:a3df82d24723308b",
+        "android_client_info": {
+          "package_name": "com.example.rizki.transportptba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679911741787-v0ig03neamkk0g1pj1k4rjllqremmir9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAKZgAk0dnA15aPw0OgtrttmRKJjSJ33g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

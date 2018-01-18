@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:layout_width="293dp"
+            android:layout_height="192dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="65dp"
+            android:src="@mipmap/logo"
+            />
+        <TextView
+            android:id="@+id/main_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="5mm"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+        <ImageView
+            android:id="@+id/img_antar"
+            android:layout_width="80dp"
+            android:src="@drawable/antar"
+            android:layout_height="80dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/img_jemput"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:onClick="onClickAntar"
+             />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Antar"
+                app:layout_constraintTop_toBottomOf="@id/img_antar"
+                app:layout_constraintLeft_toLeftOf="@id/img_antar"
+                app:layout_constraintRight_toRightOf="@id/img_antar"
+                android:id="@+id/tv1"
+                />
+        <ImageView
+            android:id="@+id/img_jemput"
+            android:layout_width="80dp"
+            android:src="@drawable/jemput"
+            android:layout_height="80dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintLeft_toRightOf="@id/img_antar"
+            app:layout_constraintRight_toRightOf="@id/img_layanan"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:onClick="onClickJemput" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Jemput"
+                android:id="@+id/tv2"
+                app:layout_constraintTop_toBottomOf="@id/img_jemput"
+                app:layout_constraintLeft_toLeftOf="@id/img_jemput"
+                app:layout_constraintRight_toRightOf="@id/img_jemput"
+                />
+        <ImageView
+            android:id="@+id/img_layanan"
+            android:layout_width="80dp"
+            android:src="@drawable/layanan"
+            android:layout_height="80dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintLeft_toRightOf="@+id/img_jemput"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:onClick="onClickLayanan" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Layanan"
+                android:id="@+id/tv3"
+                android:layout_marginLeft="0dp"
+                app:layout_constraintTop_toBottomOf="@id/img_layanan"
+                app:layout_constraintLeft_toLeftOf="@id/img_layanan"
+                app:layout_constraintRight_toRightOf="@id/img_layanan"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="8dp"
+                 />
+        <ImageView
+            android:id="@+id/img_ubah"
+            android:layout_width="80dp"
+            android:src="@drawable/ubah"
+            android:layout_height="80dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintLeft_toLeftOf="@+id/tv1"
+            app:layout_constraintTop_toBottomOf="@+id/tv1"
+            app:layout_constraintRight_toRightOf="@+id/tv1"
+            app:layout_constraintBottom_toBottomOf="@+id/tv4"
+            android:layout_marginBottom="8dp"
+            android:onClick="onClickUbah" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubah Jadwal"
+                app:layout_constraintLeft_toLeftOf="@+id/img_ubah"
+                app:layout_constraintRight_toRightOf="@+id/img_ubah"
+                app:layout_constraintTop_toBottomOf="@+id/img_ubah"
+                android:id="@+id/tv4" />
+        <ImageView
+            android:id="@+id/img_batal"
+            android:layout_width="80dp"
+            android:src="@drawable/batal"
+            android:layout_height="80dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/tv2"
+            app:layout_constraintTop_toBottomOf="@+id/tv2"
+            app:layout_constraintRight_toRightOf="@+id/tv2"
+            app:layout_constraintBottom_toBottomOf="@+id/tv5"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:onClick="onClickBatal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batal Pemesanan"
+                app:layout_constraintLeft_toLeftOf="@+id/img_batal"
+                app:layout_constraintRight_toRightOf="@+id/img_batal"
+                app:layout_constraintTop_toBottomOf="@+id/img_batal"
+                android:id="@+id/tv5" />
+        <ImageView
+            android:id="@+id/img_logout"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="28dp"
+            app:layout_constraintLeft_toLeftOf="@+id/tv3"
+            app:layout_constraintTop_toBottomOf="@+id/tv3"
+            app:layout_constraintRight_toRightOf="@+id/tv3"
+            app:layout_constraintLeft_toRightOf="@id/img_batal"
+            app:layout_constraintHorizontal_bias="0.511"
+            android:onClick="onClickLogout"
+            app:layout_constraintBottom_toBottomOf="@+id/tv6"
+            android:layout_marginBottom="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log out"
+                app:layout_constraintLeft_toLeftOf="@+id/img_logout"
+                app:layout_constraintRight_toRightOf="@+id/img_logout"
+                app:layout_constraintTop_toBottomOf="@+id/img_logout"
+                android:id="@+id/tv6" />
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
